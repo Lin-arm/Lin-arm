@@ -1,11 +1,26 @@
 ### Lin-arm
 
-<!-- https://readme-typing-svg.demolab.com/demo/ -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3500&pause=500&center=true&vCenter=true&multiline=true&width=435&height=80&lines=%E6%AF%8F%E4%B8%80%E4%B8%AA%E4%B8%8D%E6%9B%BE%E8%B5%B7%E8%88%9E%E7%9A%84%E6%97%A5%E5%AD%90;%E9%83%BD%E6%98%AF%E5%AF%B9%E7%94%9F%E5%91%BD%E7%9A%84%E8%BE%9C%E8%B4%9F)](https://git.io/typing-svg)
+<!-- 动态打字效果 https://readme-typing-svg.demolab.com/demo/ -->
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3500&pause=500&center=true&vCenter=true&multiline=true&width=435&height=100&lines=%E5%A4%9A%E7%BB%99%E7%94%9F%E6%B4%BB%E5%8A%A0%E6%B3%A8%E9%87%8A;%E4%B8%8D%E4%B8%BA%E5%B2%81%E6%9C%88%E7%95%99%E4%B9%B1%E7%A0%81" alt="Typing SVG" />
+  </a>
+</div>
+<br>
 
-<p align="left">
-  <img align="center" src="https://card.shiina.xyz/card/Lin-arm">
-</p>
+
+<!-- 个人资料卡 https://github.com/shiinasaku/Github-Card -->
+<div align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://card.shiina.xyz/card/Lin-arm?theme=github_dark&animate=true"
+    />
+    <img src="https://card.shiina.xyz/card/Lin-arm&animate=true" alt="GitHub Stats" />
+  </picture>
+</div>
+<br>
+
 
 <!-- https://github.com/czl9707/gh-space-shooter -->
 ![My GitHub Game](game.gif)
