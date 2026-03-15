@@ -1,4 +1,11 @@
-### Lin-arm
+
+
+<!-- 浏览量 https://github.com/pudding0503/github-badge-collection -->
+<div align="center">
+  <img src="https://api.moedog.org/count/@Lin-arm.readme" alt="GitHub Stats" />
+</div>
+<br>
+
 
 <!-- 动态打字效果 https://readme-typing-svg.demolab.com/demo/ -->
 <div align="center">
@@ -7,7 +14,6 @@
   </a>
 </div>
 <br>
-
 
 <!-- 个人资料卡 https://github.com/shiinasaku/Github-Card -->
 <div align="center">
