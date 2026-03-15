@@ -6,3 +6,5 @@
 <p align="left">
   <img align="center" src="https://card.shiina.xyz/card/Lin-arm">
 </p>
+
+![My GitHub Game](game.gif)
