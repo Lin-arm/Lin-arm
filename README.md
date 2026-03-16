@@ -2,7 +2,7 @@
 
 <!-- 浏览量 https://github.com/pudding0503/github-badge-collection -->
 <div align="center">
-  <img src="https://api.moedog.org/count/@Lin-arm.readme" alt="GitHub Stats" />
+  <img src="https://api.moedog.org/count/@Lin-arm.readme" alt="GitHub Stats" title="浏览量" />
 </div>
 
 <!-- 动态打字效果 https://readme-typing-svg.demolab.com/demo/ -->
@@ -20,19 +20,12 @@
   </picture>
 </div>
 
-<!-- 软件图标 https://github.com/LelouchFR/skill-icons -->
+<!-- 图标 https://github.com/LelouchFR/skill-icons -->
 <p align="center">
-  <!-- <a href="https://go-skill-icons.vercel.app/">
-    <img src="https://go-skill-icons.vercel.app/api/icons?i=vim,electron,aftereffects" />
-  </a> -->
-  <a href="https://code.visualstudio.com/"> <img src="https://go-skill-icons.vercel.app/api/icons?i=vscode" /> </a>
-  <a href="#"> <img src="https://go-skill-icons.vercel.app/api/icons?i=androidstudio" /> </a>
-  <a href="https://eclipseide.org/"> <img src="https://go-skill-icons.vercel.app/api/icons?i=eclipse" /> </a>
-  <a href="#"> <img src="https://go-skill-icons.vercel.app/api/icons?i=gitbash" /> </a>
-  <a href="#"> <img src="https://go-skill-icons.vercel.app/api/icons?i=vim" /> </a>
-  <a href="#"> <img src="https://go-skill-icons.vercel.app/api/icons?i=electron" /> </a>
-  <a href="#"> <img src="https://go-skill-icons.vercel.app/api/icons?i=aftereffects" /> </a>
+  <a href="https://go-skill-icons.vercel.app/">
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=vscode,androidstudio,idea,eclipse,visualstudio,postman,vim,arduino,powershell,gitbash,kali,linux,ubuntu,hadoop,java,spring,kotlin,cpp,qt,python,html,css,javascript,typescript,vuejs,elementplus,pinia,codepen,maven,mysql,tomcat,cloudflare,photoshop,premiere,audition,mediaencoder" />
+  </a>
 </p>
 
-<!-- https://github.com/czl9707/gh-space-shooter -->
+<!-- 贡献图变太空射击游戏 https://github.com/czl9707/gh-space-shooter -->
 ![My GitHub Game](game.gif)
