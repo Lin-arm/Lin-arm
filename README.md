@@ -5,6 +5,7 @@
   <img src="https://api.moedog.org/count/@Lin-arm.readme" alt="GitHub Stats" title="浏览量" />
 </div>
 
+
 <!-- 动态打字效果 https://readme-typing-svg.demolab.com/demo/ -->
 <div align="center">
   <a href="https://git.io/typing-svg">
@@ -12,13 +13,26 @@
   </a>
 </div>
 
+
 <!-- 个人资料卡 https://github.com/shiinasaku/Github-Card -->
-<div align="center">
+<!-- <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://card.shiina.xyz/card/Lin-arm?theme=github_dark&animate=true" />
     <img src="https://card.shiina.xyz/card/Lin-arm&animate=true" alt="GitHub Stats" />
   </picture>
-</div>
+</div><br> -->
+
+
+<!-- 属性和语言卡 https://github.com/anuraghazra/github-readme-stats -->
+<div align="center">
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=Lin-arm&theme=transparent" />
+  </a>
+  <a href="https://github.com/anuraghazra/convoychat">
+    <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Lin-arm&layout=compact&langs_count=8&card_width=320&theme=transparent" />
+  </a>
+</div><br>
+
 
 <!-- 图标 https://github.com/LelouchFR/skill-icons -->
 <p align="center">
@@ -27,5 +41,7 @@
   </a>
 </p>
 
+
 <!-- 贡献图变太空射击游戏 https://github.com/czl9707/gh-space-shooter -->
 ![My GitHub Game](game.gif)
+
