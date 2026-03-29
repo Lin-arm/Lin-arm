@@ -24,22 +24,22 @@
 
 
 <!-- 属性和语言卡 https://github.com/anuraghazra/github-readme-stats -->
-<div align="center">
+<!-- <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
     <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=Lin-arm&theme=transparent" />
   </a>
   <a href="https://github.com/anuraghazra/convoychat">
     <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Lin-arm&layout=compact&langs_count=8&card_width=320&theme=transparent" />
   </a>
-</div><br>
+</div><br> -->
 
 
 <!-- 图标 https://github.com/LelouchFR/skill-icons -->
-<p align="center">
+<!-- <p align="center">
   <a href="https://go-skill-icons.vercel.app/">
     <img src="https://go-skill-icons.vercel.app/api/icons?i=vscode,androidstudio,idea,eclipse,visualstudio,postman,vim,arduino,powershell,gitbash,kali,linux,ubuntu,hadoop,java,spring,kotlin,cpp,qt,python,html,css,javascript,typescript,vuejs,elementplus,pinia,codepen,maven,mysql,tomcat,cloudflare,photoshop,premiere,audition,mediaencoder" />
   </a>
-</p>
+</p> -->
 
 
 <!-- 贡献图变太空射击游戏 https://github.com/czl9707/gh-space-shooter -->
