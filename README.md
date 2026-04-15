@@ -9,7 +9,7 @@
 <!-- 动态打字效果 https://readme-typing-svg.demolab.com/demo/ -->
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3500&pause=500&center=true&vCenter=true&multiline=true&width=435&height=100&lines=%E5%A4%9A%E7%BB%99%E7%94%9F%E6%B4%BB%E5%8A%A0%E6%B3%A8%E9%87%8A;%E4%B8%8D%E4%B8%BA%E5%B2%81%E6%9C%88%E7%95%99%E4%B9%B1%E7%A0%81" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=8000&pause=5000&center=true&vCenter=true&width=435&height=100&lines=%E4%BB%8A%E5%A4%95%E4%BD%95%E5%A4%95%EF%BC%8C%E8%A7%81%E6%AD%A4%E8%89%AF%E4%BA%BA%EF%BC%9F" alt="Typing SVG" />
   </a>
 </div>
 
@@ -24,14 +24,14 @@
 
 
 <!-- 属性和语言卡 https://github.com/anuraghazra/github-readme-stats -->
-<!-- <div align="center">
+<div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
     <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=Lin-arm&theme=transparent" />
   </a>
   <a href="https://github.com/anuraghazra/convoychat">
     <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Lin-arm&layout=compact&langs_count=8&card_width=320&theme=transparent" />
   </a>
-</div><br> -->
+</div><br>
 
 
 <!-- 图标 https://github.com/LelouchFR/skill-icons -->
