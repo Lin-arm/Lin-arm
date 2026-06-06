@@ -45,6 +45,6 @@
 
 
 <!-- ![贪吃蛇](assets/snake.svg) -->
-![吃豆人](assets/pacman.svg)
-<!-- ![打砖块](assets/breakout.svg) -->
+<!-- ![吃豆人](assets/pacman.svg) -->
+![打砖块](assets/breakout.svg)
 <!-- ![太空射击](assets/galaga.svg) -->
