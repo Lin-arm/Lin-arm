@@ -1,4 +1,4 @@
-name: Generate 5 Contribution SVG Animations
+name: Generate 4 Contribution SVG Animations
 on:
   schedule:
     - cron: "0 19 * * *"
@@ -42,14 +42,10 @@ jobs:
           mv dist/breakout-contribution-graph.svg assets/breakout.svg
           mv dist/galaga-contribution-graph.svg assets/galaga.svg
 
-      # 3. 粒子流动动画
-      - name: Generate Particle Matrix SVG
-        run: curl -s "https://gh-particle.vercel.app/api?username=Lin-arm&animation=float" -o assets/particle.svg
-
       # 提交所有文件
       - name: Commit and push
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/*.svg
-          git diff --staged --quiet || (git commit -m "chore: generate 5 contribution animated svgs" && git push)
+          git diff --staged --quiet || (git commit -m "chore: generate 4 stable contribution animated svgs" && git push)
