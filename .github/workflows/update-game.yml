@@ -1,13 +1,10 @@
 name: Generate 6 Contribution SVG Animations
-
 on:
   schedule:
     - cron: "0 19 * * *"
   workflow_dispatch:
-
 permissions:
   contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,17 +13,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Create assets folder
+      - name: Create assets dir
         run: mkdir -p assets
 
-      # 1. 贪吃蛇
+      #1 贪吃蛇
       - name: Generate Snake SVG
         uses: platane/snk@v3
         with:
           github_user_name: Lin-arm
           outputs: assets/snake.svg
 
-      # 2. 吃豆人 Pacman
+      #2 吃豆人
       - name: Generate Pacman SVG
         uses: abozanona/pacman-contribution-graph@main
         with:
@@ -34,7 +31,7 @@ jobs:
           game_type: pacman
           output_path: assets/pacman.svg
 
-      # 3. 打砖块 Breakout
+      #3 打砖块
       - name: Generate Breakout SVG
         uses: abozanona/pacman-contribution-graph@main
         with:
@@ -42,7 +39,7 @@ jobs:
           game_type: breakout
           output_path: assets/breakout.svg
 
-      # 4. 太空射击 Galaga
+      #4 太空战机
       - name: Generate Galaga SVG
         uses: abozanona/pacman-contribution-graph@main
         with:
@@ -50,23 +47,21 @@ jobs:
           game_type: galaga
           output_path: assets/galaga.svg
 
-      # 5. 动态日历生长动画
-      - name: Generate Animated Calendar SVG
-        uses: jakejarvis/github-poster-action@master
+      #5 替换：3D动态贡献日历（稳定可用，自带明暗渐变动画）
+      - name: Generate 3D Animated Calendar SVG
+        uses: yoshi389111/github-profile-3d-contrib@main
         with:
-          github_user: Lin-arm
-          output: assets/calendar.svg
-          args: --with-animation --animation-time=10
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          output-path: assets/calendar.svg
 
-      # 6. 粒子流动动画
+      #6 粒子浮动点阵
       - name: Generate Particle Matrix SVG
-        run: |
-          curl -s "https://gh-particle.vercel.app/api?username=Lin-arm&animation=float" -o assets/particle.svg
+        run: curl -s "https://gh-particle.vercel.app/api?username=Lin-arm&animation=float" -o assets/particle.svg
 
-      # 提交所有 SVG
-      - name: Commit and push
+      #统一提交所有svg
+      - name: Commit & Push SVG files
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/*.svg
-          git diff --staged --quiet || (git commit -m "chore: update 6 contribution svg animations" && git push)
+          git diff --staged --quiet || (git commit -m "chore: update six types of contribution animated svg assets" && git push)
