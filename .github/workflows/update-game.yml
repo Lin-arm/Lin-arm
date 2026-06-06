@@ -1,10 +1,11 @@
-name: Generate 6 Contribution SVG Animations
+name: Generate 5 Contribution SVG Animations
 on:
   schedule:
     - cron: "0 19 * * *"
   workflow_dispatch:
 permissions:
   contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,12 +14,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Create assets & dist dir
+      - name: Create assets & dist folder
         run: |
           mkdir -p assets
           mkdir -p dist
 
-      # 1、贪吃蛇（platane/snk 原生正常）
+      # 1. 贪吃蛇
       - name: Generate Snake SVG
         uses: platane/snk@v3
         with:
@@ -27,38 +28,28 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 2、吃豆人/打砖块/太空战机【修正官方入参，games参数填全部三款】
-      - name: Generate Pacman/Breakout/Galaga SVG
+      # 2. 吃豆人 + 打砖块 + 太空战机
+      - name: Generate Arcade Games SVG
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: Lin-arm
           github_token: ${{ secrets.GITHUB_TOKEN }}
           games: pacman,breakout,galaga
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 移动dist内三款svg到assets
-      - name: Move game svg to assets
+      - name: Move games to assets
         run: |
           mv dist/pacman-contribution-graph.svg assets/pacman.svg
           mv dist/breakout-contribution-graph.svg assets/breakout.svg
           mv dist/galaga-contribution-graph.svg assets/galaga.svg
 
-      #3、3D立体动态日历
-      - name: Generate 3D Animated Calendar SVG
-        uses: yoshi389111/github-profile-3d-contrib@main
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          output-path: assets/calendar.svg
-
-      #4、粒子流动SVG
+      # 3. 粒子流动动画
       - name: Generate Particle Matrix SVG
         run: curl -s "https://gh-particle.vercel.app/api?username=Lin-arm&animation=float" -o assets/particle.svg
 
-      #统一提交全部svg
-      - name: Commit & Push SVG files
+      # 提交所有文件
+      - name: Commit and push
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/*.svg
-          git diff --staged --quiet || (git commit -m "chore: update six types of contribution animated svg assets" && git push)
+          git diff --staged --quiet || (git commit -m "chore: generate 5 contribution animated svgs" && git push)
