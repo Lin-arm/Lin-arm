@@ -13,52 +13,49 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Create assets dir
-        run: mkdir -p assets
+      - name: Create assets & dist dir
+        run: |
+          mkdir -p assets
+          mkdir -p dist
 
-      #1 贪吃蛇
+      # 1、贪吃蛇（platane/snk 原生正常）
       - name: Generate Snake SVG
         uses: platane/snk@v3
         with:
           github_user_name: Lin-arm
           outputs: assets/snake.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      #2 吃豆人
-      - name: Generate Pacman SVG
+      # 2、吃豆人/打砖块/太空战机【修正官方入参，games参数填全部三款】
+      - name: Generate Pacman/Breakout/Galaga SVG
         uses: abozanona/pacman-contribution-graph@main
         with:
-          github_username: Lin-arm
-          game_type: pacman
-          output_path: assets/pacman.svg
+          github_user_name: Lin-arm
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          games: pacman,breakout,galaga
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      #3 打砖块
-      - name: Generate Breakout SVG
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_username: Lin-arm
-          game_type: breakout
-          output_path: assets/breakout.svg
+      # 移动dist内三款svg到assets
+      - name: Move game svg to assets
+        run: |
+          mv dist/pacman-contribution-graph.svg assets/pacman.svg
+          mv dist/breakout-contribution-graph.svg assets/breakout.svg
+          mv dist/galaga-contribution-graph.svg assets/galaga.svg
 
-      #4 太空战机
-      - name: Generate Galaga SVG
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_username: Lin-arm
-          game_type: galaga
-          output_path: assets/galaga.svg
-
-      #5 替换：3D动态贡献日历（稳定可用，自带明暗渐变动画）
+      #3、3D立体动态日历
       - name: Generate 3D Animated Calendar SVG
         uses: yoshi389111/github-profile-3d-contrib@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           output-path: assets/calendar.svg
 
-      #6 粒子浮动点阵
+      #4、粒子流动SVG
       - name: Generate Particle Matrix SVG
         run: curl -s "https://gh-particle.vercel.app/api?username=Lin-arm&animation=float" -o assets/particle.svg
 
-      #统一提交所有svg
+      #统一提交全部svg
       - name: Commit & Push SVG files
         run: |
           git config --global user.name "github-actions[bot]"
