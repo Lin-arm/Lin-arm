@@ -21,7 +21,7 @@ jobs:
         run: mkdir -p assets
 
       # 生成游戏动画
-      - uses: czl97070/gh-space-shooter@v2
+      - uses: czl9707/gh-space-shooter@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           output-path: 'assets/game.gif'
