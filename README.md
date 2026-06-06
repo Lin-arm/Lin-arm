@@ -24,14 +24,16 @@
 
 
 <!-- 属性和语言卡 https://github.com/anuraghazra/github-readme-stats -->
-<div align="center">
+<!-- <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
     <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=Lin-arm&theme=transparent" />
   </a>
   <a href="https://github.com/anuraghazra/convoychat">
     <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Lin-arm&layout=compact&langs_count=8&card_width=320&theme=transparent" />
   </a>
-</div><br>
+</div><br> -->
+![Stats](assets/stats.svg)
+![常用的编程语言排行](assets/top-langs.svg)
 
 
 <!-- 图标 https://github.com/LelouchFR/skill-icons -->
@@ -42,8 +44,8 @@
 </p> -->
 
 
-![Snake](assets/snake.svg)
-![Pacman](assets/pacman.svg)
-![Breakout](assets/breakout.svg)
-![Galaga](assets/galaga.svg)
+![贪吃蛇](assets/snake.svg)
+![吃豆人](assets/pacman.svg)
+![打砖块](assets/breakout.svg)
+![太空射击](assets/galaga.svg)
 
