@@ -42,6 +42,8 @@
 </p> -->
 
 
-<!-- 贡献图变太空射击游戏 https://github.com/czl9707/gh-space-shooter -->
-![My GitHub Game](game.gif)
+![Snake](assets/snake.svg)
+![Pacman](assets/pacman.svg)
+![Breakout](assets/breakout.svg)
+![Galaga](assets/galaga.svg)
 
