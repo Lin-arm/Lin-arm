@@ -2,8 +2,13 @@
 
 <!-- 浏览量 https://github.com/pudding0503/github-badge-collection -->
 <div align="center">
-  <img src="https://api.moedog.org/count/@Lin-arm.readme" alt="GitHub Stats" title="浏览量" />
+  <!-- <img src="https://api.moedog.org/count/@Lin-arm.readme" alt="GitHub Stats" title="浏览量" /> -->
+  <!-- <img src="https://api.moedog.org/count/@Lin-arm.readme?theme=miku" alt="GitHub Stats" title="浏览量" /> -->
+
+  <!-- 动态显示 -->
+  <img src="https://count.nett.moe/get/Lin-arm-profile/img?theme=rule34" alt="GitHub Stats" title="浏览量" />
 </div>
+
 
 
 <!-- 动态打字效果 https://readme-typing-svg.demolab.com/demo/ -->
