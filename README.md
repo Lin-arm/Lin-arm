@@ -28,6 +28,11 @@
 </div><br> -->
 
 
+<!-- 毒舌 GitHub 评分 -->
+[![GitHub Roast](https://githubroast.dev/api/card/Lin-arm)](https://githubroast.dev/u/Lin-arm)
+
+
+
 <!-- 属性和语言卡 https://github.com/anuraghazra/github-readme-stats -->
 <!-- <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
