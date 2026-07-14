@@ -29,7 +29,7 @@
 
 
 <!-- 毒舌 GitHub 评分 -->
-[![GitHub Roast](https://githubroast.dev/api/card/Lin-arm)](https://githubroast.dev/u/Lin-arm)
+<!-- [![GitHub Roast](https://githubroast.dev/api/card/Lin-arm)](https://githubroast.dev/u/Lin-arm) -->
 
 
 
