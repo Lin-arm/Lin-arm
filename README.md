@@ -6,7 +6,7 @@
   <!-- <img src="https://api.moedog.org/count/@Lin-arm.readme?theme=miku" alt="GitHub Stats" title="浏览量" /> -->
 
   <!-- 动态显示  https://github.com/journey-ad/Moe-counter -->
-  <img src="https://count.getloli.com/@Lin-arm?name=Lin-arm&theme=booru-lewd&padding=10&offset=0&align=top&scale=1.4&pixelated=1&darkmode=auto" alt="GitHub Stats" title="浏览量" />
+  <img src="https://count.getloli.com/@Lin-arm?name=Lin-arm&theme=booru-lewd&padding=10&offset=0&align=top&scale=1.1&pixelated=1&darkmode=auto" alt="GitHub Stats" title="浏览量" />
 </div>
 
 
