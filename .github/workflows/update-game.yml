@@ -37,6 +37,7 @@ jobs:
 
       - name: 将生成的SVG移动到 assets
         run: |
+          ls -l dist
           mv dist/pacman-contribution-graph.svg assets/pacman.svg
           mv dist/breakout-contribution-graph.svg assets/breakout.svg
           mv dist/galaga-contribution-graph.svg assets/galaga.svg
