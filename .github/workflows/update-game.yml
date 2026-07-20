@@ -28,6 +28,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # 锁定Node20，消除Node版本弃用警告
+      - name: 配置 Node.js 20 环境
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
       - name: 生成SVG (吃豆人 & 打砖块 & 太空战机)
         uses: abozanona/pacman-contribution-graph@main
         with:
@@ -35,12 +41,18 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           games: pacman,breakout,galaga
 
-      - name: 将生成的SVG移动到 assets
+      - name: 将浅色/深色全套SVG移动到 assets
         run: |
           ls -l dist
-          mv dist/pacman-contribution-graph.svg assets/pacman.svg
-          mv dist/breakout-contribution-graph.svg assets/breakout.svg
-          mv dist/galaga-contribution-graph.svg assets/galaga.svg
+          for file in dist/*.svg; do
+            # 提取游戏名前缀
+            name=$(cut -d'-' -f1 <<< "$file")
+            if [[ "$file" == *"-dark.svg" ]]; then
+              mv "$file" "assets/${name}-dark.svg"
+            else
+              mv "$file" "assets/${name}.svg"
+            fi
+          done
 
       - name: 提交所有SVG并推送到仓库
         run: |
