@@ -1,4 +1,4 @@
-name: Github Cards
+name: 📊生成GitHub数据卡片
 
 on:
   schedule:
@@ -12,28 +12,30 @@ jobs:
       contents: write
     
     steps:
-      - name: Checkout repository
+      - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: Generate stats card
+      - name: 生成个人数据统计卡片
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
+          # 卡片配置参数：当前仓库所有者、显示图标、透明主题、统计全部提交、包含私有仓库、隐藏边框
           options: "username=${{ github.repository_owner }}&show_icons=true&theme=transparent&include_all_commits=true&count_private=true&hide_border=true"
           path: assets/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate top languages card
+      - name: 生成常用编程语言统计卡片
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
+          # 卡片配置：紧凑布局、最多展示8门语言、透明主题、隐藏边框
           options: "username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=transparent&hide_border=true"
           path: assets/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit and push cards
+      - name: 提交所有SVG并推送到仓库
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/*.svg
-          git diff --staged --quiet || (git commit -m "chore: 📊生成透明的统计卡片" && git push)
+          git diff --staged --quiet || (git commit -m "chore: 📊生成数据卡片" && git push)

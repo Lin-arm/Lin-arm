@@ -1,4 +1,4 @@
-name: Generate 4 Contribution SVG Animations
+name: ✨生成4种贡献SVG动画
 on:
   schedule:
     - cron: "0 19 * * *"
@@ -10,17 +10,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - name: 拉取仓库代码
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-      - name: Create assets & dist folder
+      - name: 创建文件夹 assets & dist
         run: |
           mkdir -p assets
           mkdir -p dist
 
-      # 1. 贪吃蛇
-      - name: Generate Snake SVG
+      - name: 生成 贪吃蛇SVG
         uses: platane/snk@v3
         with:
           github_user_name: Lin-arm
@@ -28,22 +28,20 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 2. 吃豆人 + 打砖块 + 太空战机
-      - name: Generate Arcade Games SVG
+      - name: 生成SVG (吃豆人 & 打砖块 & 太空战机)
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: Lin-arm
           github_token: ${{ secrets.GITHUB_TOKEN }}
           games: pacman,breakout,galaga
 
-      - name: Move games to assets
+      - name: 将生成的SVG移动到 assets
         run: |
           mv dist/pacman-contribution-graph.svg assets/pacman.svg
           mv dist/breakout-contribution-graph.svg assets/breakout.svg
           mv dist/galaga-contribution-graph.svg assets/galaga.svg
 
-      # 提交所有文件
-      - name: Commit and push
+      - name: 提交所有SVG并推送到仓库
         run: |
           git config --global user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
