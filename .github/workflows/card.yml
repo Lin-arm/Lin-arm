@@ -1,4 +1,4 @@
-name: 📊生成GitHub数据卡片
+name: 生成GitHub数据卡片📊
 
 on:
   schedule:

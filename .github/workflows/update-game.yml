@@ -1,4 +1,4 @@
-name: ✨生成4种贡献SVG动画
+name: 生成7种贡献SVG动画✨
 on:
   schedule:
     - cron: "0 19 * * *"
@@ -15,10 +15,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 创建文件夹 dist
+      - name: 打印or创建目录
         run: |
-          ls -l
-          # mkdir -p dist
+          echo "当前目录文件：$(ls -lR)"
+          mkdir -p assets
+          mkdir -p dist
 
       - name: 生成 贪吃蛇SVG
         uses: platane/snk@v3
@@ -28,7 +29,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 锁定Node20，消除Node版本弃用警告
       - name: 配置 Node.js 20 环境
         uses: actions/setup-node@v4
         with:
@@ -41,14 +41,24 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           games: 'pacman,breakout,galaga,puzzle-bobble,bomberman,minesweeper'
 
-      - name: 将浅色/深色全套SVG移动到 assets
+      - name: 将浅色/深色全套SVG移动并重命名到 assets
         run: |
-          ls -l
-          ls -l dist
+          echo "当前目录文件：$(ls -lR)"
+          for file in dist/*.svg; do
+            # 取出纯文件名
+            fn=$(basename "$file")
+            # 以 "-" 分割，取第一段为游戏名
+            game=$(echo "$fn" | cut -d'-' -f1)
+            if [[ "$fn" == *"-dark.svg" ]]; then
+              mv "$file" "assets/${game}-dark.svg"
+            else
+              mv "$file" "assets/${game}.svg"
+            fi
+          done
 
       - name: 提交所有SVG并推送到仓库
         run: |
           git config --global user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/*.svg
-          git diff --staged --quiet || (git commit -m "chore: ✨生成7个稳定的贡献动画SVG" && git push)
+          git diff --staged --quiet || (git commit -m "chore: ✨生成7种稳定的贡献动画SVG" && git push)
