@@ -54,7 +54,21 @@
 </p> -->
 
 
+
+<!-- 贡献SVG动画 -->
+<!-- 亮色主题 -->
 <!-- ![贪吃蛇](assets/snake.svg) -->
 <!-- ![吃豆人](assets/pacman.svg) -->
 <!-- ![打砖块](assets/breakout.svg) -->
-![太空射击](assets/galaga.svg)
+<!-- ![太空射击](assets/galaga.svg) -->
+<!-- ![谜题泡泡](assets/puzzle.svg) -->
+<!-- ![炸弹人](assets/bomberman.svg) -->
+<!-- ![扫雷](assets/minesweeper.svg) -->
+
+<!-- 暗色主题 -->
+![吃豆人](assets/pacman-dark.svg)
+![打砖块](assets/breakout-dark.svg)
+![太空射击](assets/galaga-dark.svg)
+![谜题泡泡](assets/puzzle-dark.svg)
+![炸弹人](assets/bomberman-dark.svg)
+![扫雷](assets/minesweeper-dark.svg)
