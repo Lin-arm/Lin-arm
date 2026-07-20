@@ -15,13 +15,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 创建文件夹 assets & dist
+      - name: 创建文件夹 dist
         run: |
-          pwd
           ls -l
-          mkdir -p assets
-          mkdir -p dist
-          ls -l
+          # mkdir -p dist
 
       - name: 生成 贪吃蛇SVG
         uses: platane/snk@v3
@@ -37,33 +34,21 @@ jobs:
         with:
           node-version: 20
 
-      - name: 生成SVG (吃豆人 & 打砖块 & 太空战机)
+      - name: 生成SVG (吃豆人 & 打砖块 & 太空战机 & 谜题泡泡 & 炸弹人 & 扫雷)
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: Lin-arm
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          games: pacman,breakout,galaga
+          games: 'pacman,breakout,galaga,puzzle-bobble,bomberman,minesweeper'
 
       - name: 将浅色/深色全套SVG移动到 assets
         run: |
           ls -l
           ls -l dist
-          mkdir -p assets
-          for src in dist/*.svg; do
-            filename=$(basename "$src")
-            # 截取第一段游戏名
-            game=$(echo "$filename" | cut -d '-' -f 1)
-            if [[ "$filename" == *"-dark.svg" ]]; then
-              dest="assets/${game}-dark.svg"
-            else
-              dest="assets/${game}.svg"
-            fi
-            mv "$src" "$dest"
-          done
 
       - name: 提交所有SVG并推送到仓库
         run: |
           git config --global user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/*.svg
-          git diff --staged --quiet || (git commit -m "chore: ✨生成4个稳定的贡献动画SVG" && git push)
+          git diff --staged --quiet || (git commit -m "chore: ✨生成7个稳定的贡献动画SVG" && git push)
