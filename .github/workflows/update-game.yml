@@ -17,8 +17,11 @@ jobs:
 
       - name: 创建文件夹 assets & dist
         run: |
+          pwd
+          ls -l
           mkdir -p assets
           mkdir -p dist
+          ls -l
 
       - name: 生成 贪吃蛇SVG
         uses: platane/snk@v3
@@ -43,15 +46,19 @@ jobs:
 
       - name: 将浅色/深色全套SVG移动到 assets
         run: |
+          ls -l
           ls -l dist
-          for file in dist/*.svg; do
-            # 提取游戏名前缀
-            name=$(cut -d'-' -f1 <<< "$file")
-            if [[ "$file" == *"-dark.svg" ]]; then
-              mv "$file" "assets/${name}-dark.svg"
+          mkdir -p assets
+          for src in dist/*.svg; do
+            filename=$(basename "$src")
+            # 截取第一段游戏名
+            game=$(echo "$filename" | cut -d '-' -f 1)
+            if [[ "$filename" == *"-dark.svg" ]]; then
+              dest="assets/${game}-dark.svg"
             else
-              mv "$file" "assets/${name}.svg"
+              dest="assets/${game}.svg"
             fi
+            mv "$src" "$dest"
           done
 
       - name: 提交所有SVG并推送到仓库
