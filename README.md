@@ -1,12 +1,8 @@
 
 
-<!-- 浏览量 https://github.com/pudding0503/github-badge-collection -->
+<!-- 浏览量(动态显示) https://github.com/journey-ad/Moe-counter -->
 <div align="center">
-  <!-- <img src="https://api.moedog.org/count/@Lin-arm.readme" alt="GitHub Stats" title="浏览量" /> -->
-  <!-- <img src="https://api.moedog.org/count/@Lin-arm.readme?theme=miku" alt="GitHub Stats" title="浏览量" /> -->
-
-  <!-- 动态显示  https://github.com/journey-ad/Moe-counter -->
-  <img src="https://count.getloli.com/@Lin-arm?name=Lin-arm&theme=booru-lewd&padding=10&offset=0&align=top&scale=1.1&pixelated=1&darkmode=auto" alt="GitHub Stats" title="浏览量" />
+  <img src="https://count.getloli.com/@Lin-arm?name=Lin-arm&theme=booru-lewd&padding=7&offset=0&align=top&scale=1.1&pixelated=1&darkmode=auto" alt="GitHub Stats" title="浏览量" />
 </div>
 
 
@@ -19,39 +15,25 @@
 </div>
 
 
-<!-- 个人资料卡 https://github.com/shiinasaku/Github-Card -->
-<!-- <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://card.shiina.xyz/card/Lin-arm?theme=github_dark&animate=true" />
-    <img src="https://card.shiina.xyz/card/Lin-arm&animate=true" alt="GitHub Stats" />
-  </picture>
-</div><br> -->
-
-
 <!-- 毒舌 GitHub 评分 -->
-<!-- [![GitHub Roast](https://githubroast.dev/api/card/Lin-arm)](https://githubroast.dev/u/Lin-arm) -->
-
-
-
-<!-- 属性和语言卡 https://github.com/anuraghazra/github-readme-stats -->
-<!-- <div align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=Lin-arm&theme=transparent" />
+<div align="center">
+  <a href="https://ghfind.com/u/lin-arm?ref=badge">
+    <img src="https://ghfind.com/api/card/lin-arm?theme=dark" alt="GitHub Roast" width="600" />
   </a>
-  <a href="https://github.com/anuraghazra/convoychat">
-    <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Lin-arm&layout=compact&langs_count=8&card_width=320&theme=transparent" />
-  </a>
-</div><br> -->
+</div>
+
+
 ![Stats](assets/stats.svg)
 ![常用的编程语言排行](assets/top-langs.svg)
 
 
 <!-- 图标 https://github.com/LelouchFR/skill-icons -->
-<!-- <p align="center">
+<p align="center">
   <a href="https://go-skill-icons.vercel.app/">
-    <img src="https://go-skill-icons.vercel.app/api/icons?i=vscode,androidstudio,idea,eclipse,visualstudio,postman,vim,arduino,powershell,gitbash,kali,linux,ubuntu,hadoop,java,spring,kotlin,cpp,qt,python,html,css,javascript,typescript,vuejs,elementplus,pinia,codepen,maven,mysql,tomcat,cloudflare,photoshop,premiere,audition,mediaencoder" />
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=vscode,androidstudio,idea,arduino,gitbash,ubuntu,hadoop,java,spring,qt,python,vuejs,elementplus,mysql,tomcat" />
+    <!-- <img src="https://go-skill-icons.vercel.app/api/icons?i=vscode,androidstudio,idea,eclipse,visualstudio,postman,vim,arduino,powershell,gitbash,kali,linux,ubuntu,hadoop,java,spring,kotlin,cpp,qt,python,html,css,javascript,typescript,vuejs,elementplus,pinia,codepen,maven,mysql,tomcat,cloudflare,photoshop,premiere,audition,mediaencoder" /> -->
   </a>
-</p> -->
+</p>
 
 
 
@@ -69,3 +51,8 @@
 ![炸弹人(暗)](assets/bomberman-dark.svg)
 <!-- ![扫雷](assets/minesweeper.svg) -->
 <!-- ![扫雷(暗)](assets/minesweeper-dark.svg) -->
+
+
+
+
+![置顶项目卡片](assets/pin-stats-gkd-667.svg)
