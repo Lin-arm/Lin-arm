@@ -23,8 +23,11 @@
 </div>
 
 
-![Stats](assets/stats.svg)
+![GitHub 统计数据](assets/stats.svg)
+<!-- ![GitHub 统计数据](https://github-stats-extended.vercel.app/api?username=Lin-arm&show_icons=true&theme=transparent&include_all_commits=true&count_private=true&hide_border=true&locale=cn) -->
+
 ![常用的编程语言排行](assets/top-langs.svg)
+<!-- [![常用的编程语言排行](https://github-stats-extended.vercel.app/api/top-langs/?username=Lin-arm&layout=compact&langs_count=10&theme=transparent&hide_border=true&hide_title=true)](https://github.com/stats-organization/github-stats-extended) -->
 
 
 <!-- 图标 https://github.com/LelouchFR/skill-icons -->
@@ -53,6 +56,8 @@
 <!-- ![扫雷(暗)](assets/minesweeper-dark.svg) -->
 
 
+<br>
 
-
-![置顶项目卡片](assets/pin-stats-gkd-667.svg)
+## 📌置顶项目
+![Lin-arm/GKD_subscription](assets/pin-stats-gkd-667.svg)
+<!-- [![Lin-arm/GKD_subscription](https://github-stats-extended.vercel.app/api/pin/?username=Lin-arm&repo=GKD_subscription&theme=transparent&show=prs_authored,prs_commented,prs_reviewed,issues_authored,issues_commented)](https://github.com/Lin-arm/GKD_subscription) -->

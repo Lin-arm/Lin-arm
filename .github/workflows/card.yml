@@ -19,8 +19,8 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          # 卡片配置参数：当前仓库所有者、显示图标、透明主题、统计全部提交、包含私有仓库、隐藏边框
-          options: "username=${{ github.repository_owner }}&show_icons=true&theme=transparent&include_all_commits=true&count_private=true&hide_border=true"
+          # 卡片配置参数：当前仓库所有者、显示图标、透明主题、统计全部提交、包含私有仓库、隐藏边框、中文
+          options: "username=${{ github.repository_owner }}&show_icons=true&theme=transparent&include_all_commits=true&count_private=true&hide_border=true&locale=cn"
           path: assets/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -28,8 +28,8 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          # 卡片配置：紧凑布局、最多展示8门语言、透明主题、隐藏边框
-          options: "username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=transparent&hide_border=true"
+          # 卡片配置：紧凑布局、最多展示10门语言、透明主题、隐藏边框、隐藏标题
+          options: "username=${{ github.repository_owner }}&layout=compact&langs_count=10&theme=transparent&hide_border=true&hide_title=true"
           path: assets/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -37,7 +37,8 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=${{ github.repository_owner }}&repo=GKD_subscription
+          # 卡片配置：透明主题、额外显示: pr作者、pr评论、pr审阅、问题作者、问题评论
+          options: "username=${{ github.repository_owner }}&repo=GKD_subscription&theme=transparent&show=prs_authored,prs_commented,prs_reviewed,issues_authored,issues_commented"
           path: assets/pin-stats-gkd-667.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
