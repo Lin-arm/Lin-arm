@@ -28,8 +28,8 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          # 卡片配置：紧凑布局、最多展示10门语言、透明主题、隐藏边框、隐藏标题
-          options: "username=${{ github.repository_owner }}&layout=compact&langs_count=10&theme=transparent&hide_border=true&hide_title=true"
+          # 卡片配置：紧凑布局、最多展示10门语言、透明主题、隐藏边框、中文
+          options: "username=${{ github.repository_owner }}&layout=compact&langs_count=10&theme=transparent&hide_border=true&locale=cn"
           path: assets/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 

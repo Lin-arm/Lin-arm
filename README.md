@@ -1,33 +1,27 @@
 
 
-<!-- 浏览量(动态显示) https://github.com/journey-ad/Moe-counter -->
 <div align="center">
+  <!-- 动态打字效果 https://readme-typing-svg.demolab.com/demo/ -->
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=8000&pause=5000&vCenter=true&width=250&height=100&lines=%E4%BB%8A%E5%A4%95%E4%BD%95%E5%A4%95%EF%BC%8C%E8%A7%81%E6%AD%A4%E8%89%AF%E4%BA%BA%EF%BC%9F" alt="Typing SVG" />
+  </a>
+  <!-- 浏览量(动态显示) https://github.com/journey-ad/Moe-counter -->
   <img src="https://count.getloli.com/@Lin-arm?name=Lin-arm&theme=booru-lewd&padding=7&offset=0&align=top&scale=1.1&pixelated=1&darkmode=auto" alt="GitHub Stats" title="浏览量" />
 </div>
-
-
-
-<!-- 动态打字效果 https://readme-typing-svg.demolab.com/demo/ -->
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=8000&pause=5000&center=true&vCenter=true&width=435&height=100&lines=%E4%BB%8A%E5%A4%95%E4%BD%95%E5%A4%95%EF%BC%8C%E8%A7%81%E6%AD%A4%E8%89%AF%E4%BA%BA%EF%BC%9F" alt="Typing SVG" />
-  </a>
-</div>
-
+<br>
 
 <!-- 毒舌 GitHub 评分 -->
-<div align="center">
+<!-- <div align="center">
   <a href="https://ghfind.com/u/lin-arm?ref=badge">
     <img src="https://ghfind.com/api/card/lin-arm?theme=dark" alt="GitHub Roast" width="600" />
   </a>
-</div>
+</div> -->
 
 
 ![GitHub 统计数据](assets/stats.svg)
-<!-- ![GitHub 统计数据](https://github-stats-extended.vercel.app/api?username=Lin-arm&show_icons=true&theme=transparent&include_all_commits=true&count_private=true&hide_border=true&locale=cn) -->
-
 ![常用的编程语言排行](assets/top-langs.svg)
-<!-- [![常用的编程语言排行](https://github-stats-extended.vercel.app/api/top-langs/?username=Lin-arm&layout=compact&langs_count=10&theme=transparent&hide_border=true&hide_title=true)](https://github.com/stats-organization/github-stats-extended) -->
+<!-- ![GitHub 统计数据](https://github-stats-extended.vercel.app/api?username=Lin-arm&show_icons=true&theme=transparent&include_all_commits=true&count_private=true&hide_border=true&locale=cn) -->
+<!-- [![常用的编程语言排行](https://github-stats-extended.vercel.app/api/top-langs/?username=Lin-arm&layout=compact&langs_count=10&theme=transparent&hide_border=true&locale=cn)](https://github.com/stats-organization/github-stats-extended) -->
 
 
 <!-- 图标 https://github.com/LelouchFR/skill-icons -->
