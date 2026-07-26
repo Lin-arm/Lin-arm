@@ -13,10 +13,10 @@ jobs:
     
     steps:
       - name: 拉取仓库代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: 生成个人数据统计卡片
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
           # 卡片配置参数：当前仓库所有者、显示图标、透明主题、统计全部提交、包含私有仓库、隐藏边框
@@ -25,12 +25,20 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 生成常用编程语言统计卡片
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
           # 卡片配置：紧凑布局、最多展示8门语言、透明主题、隐藏边框
           options: "username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=transparent&hide_border=true"
           path: assets/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 生成置顶项目卡片
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=GKD_subscription
+          path: assets/pin-stats-gkd-667.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 提交所有SVG并推送到仓库
