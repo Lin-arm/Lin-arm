@@ -53,5 +53,5 @@
 <br>
 
 ## 📌置顶项目
-![Lin-arm/GKD_subscription](assets/pin-stats-gkd-667.svg)
+[![Lin-arm/GKD_subscription](assets/pin-stats-gkd-667.svg)](https://github.com/Lin-arm/GKD_subscription)
 <!-- [![Lin-arm/GKD_subscription](https://github-stats-extended.vercel.app/api/pin/?username=Lin-arm&repo=GKD_subscription&theme=transparent&show=prs_authored,prs_commented,prs_reviewed,issues_authored,issues_commented)](https://github.com/Lin-arm/GKD_subscription) -->
