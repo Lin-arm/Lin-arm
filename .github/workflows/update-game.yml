@@ -43,8 +43,6 @@ jobs:
           # ========= 关键点：这里必须换成你生成的PAT密钥！ =========
           github_token: ${{ secrets.PACMAN_PAT }}
           games: 'pacman,breakout,galaga,puzzle-bobble,bomberman,minesweeper'
-        env:
-          NODE_OPTIONS: --no-experimental-fetch
 
       - name: 将浅色/深色全套SVG移动并重命名到 assets
         run: |
