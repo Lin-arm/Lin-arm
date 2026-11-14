@@ -43,7 +43,7 @@
 <!-- ![谜题泡泡](assets/puzzle.svg) -->
 <!-- ![谜题泡泡(暗)](assets/puzzle-dark.svg) -->
 <!-- ![炸弹人](assets/bomberman.svg) -->
-![炸弹人(暗)](assets/bomberman-dark.svg)
+<!-- ![炸弹人(暗)](assets/bomberman-dark.svg) -->
 <!-- ![扫雷](assets/minesweeper.svg) -->
 <!-- ![扫雷(暗)](assets/minesweeper-dark.svg) -->
 <!-- ![太空射击](assets/galaga.svg) -->
